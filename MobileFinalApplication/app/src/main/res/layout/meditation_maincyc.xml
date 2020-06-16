@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070915">
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/crollviewCYC"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/meditationbg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/TopBGcyc"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/meditationtopcyc" />
+
+            <TextView
+                android:id="@+id/textView2cyc"
+                android:layout_width="351dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:alpha="0.6"
+                android:fontFamily="@font/chalkduster"
+                android:text="Meditation"
+                android:textColor="#FAFAFA"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/newmeditationseriescyc"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/TopBGcyc"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="60dp"
+                android:alpha="0.7"
+                android:fontFamily="@font/segoepr"
+                android:gravity="center"
+                android:text="new"
+                android:textAlignment="center"
+                android:textColor="#FAFAFA"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/newmeditationcyc1"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_below="@id/TopBGcyc"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/newmeditationcyc1" />
+
+            <ImageView
+                android:id="@+id/newmeditationcyc2"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_below="@id/TopBGcyc"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/newmeditationcyc2" />
+
+            <ImageView
+                android:id="@+id/newmeditationcyc3"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_below="@id/TopBGcyc"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/newmeditationcyc3" />
+
+            <TextView
+                android:id="@+id/meditationseriescyc"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/TopBGcyc"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="50dp"
+                android:alpha="0.7"
+                android:fontFamily="@font/segoepr"
+                android:gravity="center"
+                android:text="meditation series"
+                android:textAlignment="center"
+                android:textColor="#FAFAFA"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/smallpopcyc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/meditationseriescyc"
+                android:background="@drawable/smallpopscyc" />
+
+            <ImageView
+                android:id="@+id/cycmeditationseriesbg1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/smallpopcyc"
+                android:background="@drawable/newmeditation1bg" />
+
+
+            <ImageView
+                android:id="@+id/cycmeditationseriesbg2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/cycmeditationseriesbg1"
+                android:background="@drawable/newmeditation2bg" />
+            <ImageView
+                android:id="@+id/cycmeditationseries1"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                android:layout_below="@id/smallpopcyc"
+                android:layout_centerInParent="true"
+
+                android:layout_marginTop="40dp"
+
+                android:background="@drawable/newmeditation1" />
+
+            <ImageView
+                android:id="@+id/cycmeditationseries2"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                android:layout_below="@id/cycmeditationseries1"
+                android:layout_centerInParent="true"
+
+                android:layout_marginTop="50dp"
+
+                android:background="@drawable/newmeditation2" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
