@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rz_NightTalk"
+    android:contentDescription="@null"
+    tools:ignore="NamespaceTypo">
+
+    <ImageView
+        android:id="@+id/bar_rz"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-171dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/Group" />
+
+
+    <TextView
+        android:id="@+id/title_nightTalk"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:fontFamily="@font/chalkduster"
+        android:text="Sleep"
+        android:textColor="#FAFAFA"
+        android:textSize="50dp" />
+
+    <ImageButton
+        android:id="@+id/moon_rz"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="408dp"
+        android:layout_marginStart="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        app:srcCompat="@drawable/rz_moon" />
+
+    <TextView
+        android:id="@+id/text_rz"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-120dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/segoepr"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:text="I lost my work, so as my sleep. Anyway, hope you have a good dream tonight.  "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/text2_rz"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/delius"
+        android:text="---- Bejing, China"
+        android:textColor="#F7F2F0"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/icon_rz"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/icon_rz" />
+</RelativeLayout>
