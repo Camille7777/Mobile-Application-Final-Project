@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MobileFinalApplication</string>
+    <string name="app_name">login_register_page</string>
+    <string name="forgetPw">Forget password?</string>
+    <string name="register">Register</string>
+    <string name="enter">Enter</string>
+    <string name="passord">Password</string>
+    <string name="name">Name</string>
+    <string name="log_in">Log in</string>
+    <string name="dreamland">DreamLand</string>
+    <string name="email">Email</string>
 </resources>
