@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9395ea7f-c03f-4685-8274-48d32512d3e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Mobile-Application-Final-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mobile-Application-Final-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,13 @@
   </component>
   <component name="ProjectId" id="1d43kKcxeVn5vvJKS14DZsHKiio" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MobileFinalApplication" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Github\Mobile-Application-Final-Project\MobileFinalApplication\app" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
