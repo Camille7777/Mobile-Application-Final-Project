@@ -8,19 +8,4 @@
     <string name="log_in">Log in</string>
     <string name="dreamland">DreamLand</string>
     <string name="email">Email</string>
-    <string name="Composer">Composer</string>
-    <string name="composer">Composer</string>
-    <string name="violin">violin</string>
-    <string name="rainy">rainy</string>
-    <string name="_25">25%</string>
-    <string name="fire">fire</string>
-    <string name="wave">wave</string>
-    <string name="bird">bird</string>
-    <string name="vertical">vertical</string>
-    <string name="water_drop">water drop</string>
-    <string name="thunder">thunder</string>
-    <string name="_100">100%</string>
-    <string name="_50">50%</string>
-    <string name="collect_to_list">Collect to List</string>
-    <string name="my_collection">My Collection</string>
 </resources>
