@@ -7,7 +7,12 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
     </style>
-
+    <style name="BottomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
     <style name="LoginEditText" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">@color/colorLoginLine</item>
         <item name="colorControlActivated">@color/colorLoginLine</item>
