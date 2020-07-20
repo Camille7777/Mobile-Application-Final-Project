@@ -9,4 +9,105 @@
         android:layout_height="820dp"
         android:layout_alignParentTop="true"
         android:background="@drawable/subpagebgcyc" />
+
+    <TextView
+        android:id="@+id/sessionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:fontFamily="@font/pistara"
+        android:text="3 Sessions"
+        android:textColor="#62AED1"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/killAnxiety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/pistara"
+        android:layout_marginTop="100dp"
+        android:text="Killing Anxiety"
+        android:textColor="#D1D2D3"
+        android:textSize="46sp" />
+
+    <View
+        android:id="@+id/sessionTitleline"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sessionTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:background="#356981" />
+
+
+
+    <TextView
+        android:id="@+id/sessiontext1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sessionTitleline"
+        android:fontFamily="@font/pistara"
+        android:text="Deep Breath             9 mins"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="#518EAA"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/sessiontext2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sessiontext1"
+        android:fontFamily="@font/pistara"
+        android:text="Mindful Meditation      9 mins"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="#518EAA"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/sessiontext3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sessiontext2"
+        android:fontFamily="@font/pistara"
+        android:text="Rest Mind                 7 mins"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="#518EAA"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cycBtnPlay"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sessiontext3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"
+        android:onClick="playBtnClick"
+        android:background="@drawable/cyc_playbtn" />
+
+    <ImageView
+        android:id="@+id/centreimagecyc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        app:srcCompat="@drawable/centreshow_cyc" />
+
+    <Button
+        android:id="@+id/cycClear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="ReturnMainMeditationcyc"
+        android:background="@drawable/cyc_clear" />
+
 </RelativeLayout>
