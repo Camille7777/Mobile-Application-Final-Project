@@ -8,4 +8,6 @@
     <string name="log_in">Log in</string>
     <string name="dreamland">DreamLand</string>
     <string name="email">Email</string>
+    <string name="confirm_passord">Confirm Password</string>
+    <string name="logout" />
 </resources>
