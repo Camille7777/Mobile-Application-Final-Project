@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/cyccoverpage">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/animationcyc1"
+        app:lottie_loop="true"
+        app:lottie_fileName="cycladyani.json"
+        app:lottie_autoPlay="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/animationcyc2"
+        android:layout_above="@+id/bottomtextcyc"
+        app:lottie_fileName="cycsmile.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+
+    <TextView
+        android:id="@+id/bottomtextcyc"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="INSPIRATION STUDIO"
+        android:textAlignment="center"
+
+        android:textColor="#DCE8ED"
+        android:textSize="18dp" />
+
+
+
+</RelativeLayout>
