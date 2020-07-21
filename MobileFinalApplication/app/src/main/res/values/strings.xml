@@ -8,10 +8,10 @@
     <string name="log_in">Log in</string>
     <string name="dreamland">DreamLand</string>
     <string name="email">Email</string>
-<<<<<<< HEAD
+
     <string name="confirm_passord">Confirm Password</string>
     <string name="logout" />
-=======
+
     <string name="Composer">Composer</string>
     <string name="composer">Composer</string>
     <string name="violin">violin</string>
@@ -27,5 +27,5 @@
     <string name="_50">50%</string>
     <string name="collect_to_list">Collect to List</string>
     <string name="my_collection">My Collection</string>
->>>>>>> parent of 5bf5fe3... Revert "ComposerPageVersion1Added"
+
 </resources>
