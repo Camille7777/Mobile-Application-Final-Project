@@ -168,7 +168,7 @@ public class setalarm extends AppCompatActivity implements AdapterView.OnItemSel
         bar_icon4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(setalarm.this, SleepMain.class);
+                Intent a = new Intent(setalarm.this, NightMain.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -176,7 +176,7 @@ public class setalarm extends AppCompatActivity implements AdapterView.OnItemSel
         bar_icon5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(setalarm.this, SleepMain.class);
+                Intent a = new Intent(setalarm.this, MyPageMain.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }

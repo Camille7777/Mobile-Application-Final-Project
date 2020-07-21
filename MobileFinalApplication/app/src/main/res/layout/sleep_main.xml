@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#211D44"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -83,6 +84,8 @@
         android:layout_marginTop="500dp"
         android:background="@drawable/bgbtngreen"
         android:text="Start"
+
+        android:fontFamily="@font/segoepr"
         android:textAllCaps="false"
         android:textColor="#AF3555"
         android:textSize="20sp"

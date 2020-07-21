@@ -282,7 +282,7 @@ public class ComposerMain extends AppCompatActivity{
         bar_icon4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(ComposerMain.this, SleepMain.class);
+                Intent a = new Intent(ComposerMain.this, NightMain.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -290,7 +290,7 @@ public class ComposerMain extends AppCompatActivity{
         bar_icon5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(ComposerMain.this, SleepMain.class);
+                Intent a = new Intent(ComposerMain.this, MyPageMain.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
