@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/composer_zyt"
+        android:layout_width="222dp"
+        android:layout_height="92dp"
+        android:layout_above="@+id/imageView9"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/logo_zyt"
+        android:fontFamily="@font/chalkduster"
+        android:text="Sleep"
+        android:textColor="#D4D0BE"
+        android:textSize="36sp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/animation"
+        app:lottie_loop="true"
+        app:lottie_fileName="data.json"
+        app:lottie_autoPlay="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="369dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/ivSplash"
+        app:lottie_loop="true"
+        app:lottie_fileName="swelcom.json"
+        app:lottie_autoPlay="true"
+        />
+
+
+    <include layout="@layout/context_main" />
+    <TextView
+        android:id="@+id/tvSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1010dp"
+        android:layout_marginBottom="169dp"
+        android:layout_marginLeft="110dp"
+        android:text="Healthy On You"
+        android:textColor="#FF9372"
+        android:textSize="24sp"
+
+        android:fontFamily="@font/delius"
+        app:layout_constraintBottom_toTopOf="@+id/ivSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvSubSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="830dp"
+        android:layout_marginBottom="169dp"
+        android:layout_marginLeft="50dp"
+
+        android:fontFamily="@font/delius"
+        android:text="Hope you have a good night!"
+        android:textColor="#A3A2AD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSplash" />
+
+    <Button
+        android:id="@+id/btnget"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/bgbtngreen"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#AF3555"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

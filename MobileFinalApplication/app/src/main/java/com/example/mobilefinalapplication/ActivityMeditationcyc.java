@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -13,11 +14,15 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class ActivityMeditationcyc extends AppCompatActivity {
 
+
     ImageView clickImagecyc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meditationcyc);
+
+
+
         clickImagecyc= (ImageView) findViewById(R.id.cycmeditationseries1);
         clickImagecyc.setOnClickListener(new View.OnClickListener() {
             @Override

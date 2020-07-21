@@ -15,6 +15,14 @@ public class ComposerMain extends AppCompatActivity{
     ImageButton likeBtn;
     ImageButton controlBtn;
     ImageButton adjustBtn;
+
+
+    Button bar_icon1;
+    Button bar_icon2;
+    Button bar_icon3;
+    Button bar_icon4;
+    Button bar_icon5;
+
     Button myCollection;
     Button collecttonlist;
     MediaPlayer mpzyt_violin, mpzyt_fire, mpzyt_wave, mpzyt_rainy, mpzyt_thunder, mpzyt_bird, mpzyt_water;
@@ -27,6 +35,14 @@ public class ComposerMain extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.composer_main);
+
+        bar_icon1 =findViewById(R.id.bar_icon1);
+        bar_icon2 =findViewById(R.id.bar_icon2);
+        bar_icon3 =findViewById(R.id.bar_icon3);
+        bar_icon4 =findViewById(R.id.bar_icon4);
+        bar_icon5 =findViewById(R.id.bar_icon5);
+
+
 
         mpzyt_violin = MediaPlayer.create(ComposerMain.this, R.raw.violin_zyt);
         mpzyt_fire = MediaPlayer.create(ComposerMain.this, R.raw.fire_zyt);
@@ -236,6 +252,47 @@ public class ComposerMain extends AppCompatActivity{
                 Intent i = new Intent(ComposerMain.this , myComposerActivity.class);
 
                 startActivity(i);
+            }
+        });
+
+        bar_icon1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ComposerMain.this, SleepMain.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+        bar_icon2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ComposerMain.this, ActivityMeditationcyc.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+        bar_icon3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ComposerMain.this, ComposerMain.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+        bar_icon4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ComposerMain.this, SleepMain.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+        bar_icon5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ComposerMain.this, SleepMain.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
             }
         });
     }

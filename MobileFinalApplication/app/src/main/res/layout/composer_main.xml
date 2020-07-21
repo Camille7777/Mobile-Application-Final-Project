@@ -18,7 +18,7 @@
         android:layout_marginBottom="-8dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/fakebar_zyt" />
-
+    <include layout="@layout/context_main" />
     <ImageView
         android:id="@+id/line1_zyt"
         android:layout_width="5dp"

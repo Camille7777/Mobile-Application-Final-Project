@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#070915"><![CDATA[
+
+    /*app:layout_constrainEnd_toEndOf="parent"
+        app:layout_comstraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    ]]>
+    <include layout="@layout/context_main" />
+
+    <ImageView
+        android:id="@+id/bgcircle"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/bgcircle" /><![CDATA[
+
+    /*app:layout_constrainEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    ]]>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="1500dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/moon"
+        app:lottie_loop="true"
+        app:lottie_fileName="line2.json"
+        app:lottie_autoPlay="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/animation"
+        app:lottie_loop="true"
+        app:lottie_fileName="sleep.json"
+        app:lottie_autoPlay="true"
+        />
+    <ImageView
+        android:id="@+id/icanchor"
+        android:layout_width="358dp"
+        android:layout_height="357dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/icanchor" />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/rz_moon"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"/><![CDATA[
+        /*app:layout_constrainEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_comstraintHorizontal_bias="0.495"
+        app:layout_constraintTop_toTopOf="@+id/btnstop"/>
+
+    /*app:layout_comstraintHorizontal_bias="0.498"
+        app:layout_constrainEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toButtomOf="@+id/bgcircle" />
+
+    ]]>
+
+    <Chronometer
+        android:id="@+id/timeHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="348dp"
+        android:textColor="#FFF"
+        android:textSize="62sp" />
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="578dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rz_moon"
+        android:text="Stop"
+        android:textAllCaps="false"
+        android:textColor="#AF3555"
+        android:textSize="20sp" />
+    /*app:layout_constrainEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_comstraintHorizontal_bias="0.495"
+    app:layout_constraintTop_toTopOf="parent"/>
+</RelativeLayout>

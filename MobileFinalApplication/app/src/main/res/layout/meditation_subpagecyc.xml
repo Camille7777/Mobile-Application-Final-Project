@@ -28,5 +28,5 @@
         android:layout_marginTop="0dp"
         android:background="@drawable/bottomdialogcyc" />
 
-
+    <include layout="@layout/context_main" />
 </LinearLayout>

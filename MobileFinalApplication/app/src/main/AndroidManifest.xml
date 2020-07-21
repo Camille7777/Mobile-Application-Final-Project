@@ -13,8 +13,18 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".Covercyc">
+        </activity>
+        <activity
+        android:name=".setalarm"></activity>
+        <activity android:name=".StopWatchAct" />
 
 
+        <activity android:name=".SleepMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -30,16 +40,17 @@
         </activity>
         <activity android:name=".MeditationSubcyc" />
         <activity android:name=".ComposerMain">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".myComposerActivity" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <service android:name="RingtonePlayingService"
+            android:enabled="true"></service>
     </application>
 
 </manifest>
