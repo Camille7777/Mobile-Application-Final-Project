@@ -26,6 +26,12 @@
 
         //cyc:main,please dont delete, just move "Intent" TO YOUR activity, then you can run
         <activity android:name=".ActivityMeditationcyc">
+
+        </activity>
+
+        <activity android:name=".MeditationSubcyc"/>
+
+        <activity android:name=".ComposerMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,9 +39,6 @@
             </intent-filter>
         </activity>
 
-
-
-        <activity android:name=".MeditationSubcyc"/>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -116,72 +116,67 @@
     <ImageButton
         android:id="@+id/rainHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="294dp"
         android:layout_toStartOf="@+id/thunderHang_zyt"
-        android:background="#00FFFFFF"
+        android:background="@drawable/rain_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
-        android:visibility="visible"
-        app:srcCompat="@drawable/rain_zyt" />
+        android:visibility="visible" />
 
     <ImageButton
         android:id="@+id/birdHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignBottom="@+id/birdText_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="16dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/bird_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
-        android:visibility="visible"
-        app:srcCompat="@drawable/bird_zyt" />
+        android:visibility="visible" />
 
     <ImageButton
         android:id="@+id/fireHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="63dp"
         android:layout_marginBottom="411dp"
         android:layout_toStartOf="@+id/waveHang_zyt"
-        android:background="#00FFFFFF"
+        android:background="@drawable/fire_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
-        android:visibility="visible"
-        app:srcCompat="@drawable/fire_zyt" />
+        android:visibility="visible" />
 
     <ImageButton
         android:id="@+id/thunderHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="307dp"
         android:layout_toStartOf="@+id/birdHang_zyt"
-        android:background="#00FFFFFF"
+        android:background="@drawable/thunder_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
-        android:visibility="visible"
-        app:srcCompat="@drawable/thunder_zyt" />
+        android:visibility="visible" />
 
     <ImageButton
         android:id="@+id/violinHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="430dp"
         android:layout_toStartOf="@+id/fireHang_zyt"
-        android:background="#00FFFFFF"
+        android:background="@drawable/violin_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
-        android:visibility="visible"
-        app:srcCompat="@drawable/violin_zyt" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -195,26 +190,25 @@
     <ImageButton
         android:id="@+id/waterHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="172dp"
         android:layout_marginBottom="197dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/water_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
-        android:visibility="visible"
-        app:srcCompat="@drawable/water_zyt" />
+        android:visibility="visible" />
 
     <ImageButton
         android:id="@+id/waveHang_zyt"
         android:layout_width="70dp"
-        android:layout_height="76dp"
+        android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="424dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/wave_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
         android:visibility="visible"
@@ -249,10 +243,9 @@
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="13dp"
         android:layout_toStartOf="@+id/adjust_zyt"
-        android:background="#00FFFFFF"
+        android:background="@drawable/start_zyt"
         android:contentDescription="@string/Composer"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/start_zyt" />
+        android:scaleType="centerInside" />
 
     <ImageButton
         android:id="@+id/icon1_zyt"
@@ -309,15 +302,14 @@
     <ImageButton
         android:id="@+id/like_zyt"
         android:layout_width="53dp"
-        android:layout_height="53dp"
+        android:layout_height="50dp"
         android:layout_above="@+id/rainicon_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="264dp"
         android:layout_marginBottom="8dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/like_zyt"
         android:contentDescription="@string/Composer"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/like_zyt" />
+        android:scaleType="centerInside" />
 
     <ImageButton
         android:id="@+id/adjust_zyt"
@@ -444,6 +436,35 @@
         android:textSize="18sp"
         app:fontType="GOU" />
 
+
+    <Button
+        android:id="@+id/myCollection_zyt"
+        android:layout_width="152dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/like_zyt"
+        android:layout_marginEnd="-62dp"
+        android:layout_marginBottom="28dp"
+        android:layout_toStartOf="@+id/like_zyt"
+        android:background="@drawable/button_zyt"
+        android:fontFamily="@font/segoepr"
+        android:text="@string/my_collection"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/collectionlist_zyt"
+        android:layout_width="147dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/like_zyt"
+        android:layout_marginEnd="-57dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@+id/like_zyt"
+        android:background="@drawable/button_zyt"
+        android:fontFamily="@font/segoepr"
+        android:text="@string/collect_to_list"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
     <RelativeLayout
         android:id="@+id/owncomposer_zyt"
         android:layout_width="345dp"
@@ -454,7 +475,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="53dp"
         android:layout_marginBottom="189dp"
-        android:background="@drawable/adjustbkg_zyt">
+        android:background="@drawable/adjustbkg_zyt"
+        android:visibility="gone" >
 
         <LinearLayout
             android:id="@+id/library_zyt"
@@ -586,33 +608,6 @@
             android:thumb="@drawable/thumb_zyt" />
 
     </RelativeLayout>
-
-
-    <Button
-        android:id="@+id/collecttolist_zyt"
-        android:layout_width="147dp"
-        android:layout_height="27dp"
-        android:layout_above="@+id/like_zyt"
-        android:layout_marginEnd="-58dp"
-        android:layout_marginBottom="-28dp"
-        android:layout_toStartOf="@+id/like_zyt"
-        android:background="@drawable/button_zyt"
-        android:fontFamily="@font/segoepr"
-        android:text="@string/collect_to_list"
-        android:textSize="12sp" />
-
-    <Button
-        android:id="@+id/myCollection_zyt"
-        android:layout_width="152dp"
-        android:layout_height="25dp"
-        android:layout_above="@+id/like_zyt"
-        android:layout_marginEnd="-63dp"
-        android:layout_marginBottom="-2dp"
-        android:layout_toStartOf="@+id/like_zyt"
-        android:background="@drawable/button_zyt"
-        android:fontFamily="@font/segoepr"
-        android:text="@string/my_collection"
-        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/composer_zyt"
