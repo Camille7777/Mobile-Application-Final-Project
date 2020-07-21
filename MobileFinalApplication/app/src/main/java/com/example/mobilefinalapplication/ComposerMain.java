@@ -2,6 +2,7 @@ package com.example.mobilefinalapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -226,6 +227,15 @@ public class ComposerMain extends AppCompatActivity{
                     flag_volume = 0;
                     volumePopup.setVisibility(View.GONE);
                 }
+            }
+        });
+
+        myCollection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ComposerMain.this , myComposerActivity.class);
+
+                startActivity(i);
             }
         });
     }

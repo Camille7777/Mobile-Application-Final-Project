@@ -249,55 +249,51 @@
 
     <ImageButton
         android:id="@+id/icon1_zyt"
-        android:layout_width="53dp"
+        android:layout_width="49dp"
         android:layout_height="49dp"
         android:layout_above="@+id/fakebar_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="-2dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/violin_zyt"
         android:contentDescription="@string/app_name"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/rain_zyt" />
+        android:scaleType="centerInside" />
 
     <ImageButton
         android:id="@+id/icon2_zyt"
-        android:layout_width="53dp"
+        android:layout_width="49dp"
         android:layout_height="49dp"
         android:layout_above="@+id/fakebar_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="-1dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/thunder_zyt"
         android:contentDescription="@string/app_name"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/rain_zyt" />
+        android:scaleType="centerInside" />
 
     <ImageButton
         android:id="@+id/icon3_zyt"
-        android:layout_width="53dp"
+        android:layout_width="49dp"
         android:layout_height="49dp"
         android:layout_above="@+id/fakebar_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="180dp"
         android:layout_marginBottom="-1dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/water_zyt"
         android:contentDescription="@string/app_name"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/rain_zyt" />
+        android:scaleType="centerInside" />
 
     <ImageButton
         android:id="@+id/icon4_zyt"
-        android:layout_width="53dp"
+        android:layout_width="49dp"
         android:layout_height="49dp"
         android:layout_above="@+id/fakebar_zyt"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="-2dp"
         android:layout_toStartOf="@+id/icon3_zyt"
-        android:background="#00FFFFFF"
+        android:background="@drawable/fire_zyt"
         android:contentDescription="@string/app_name"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/rain_zyt" />
+        android:scaleType="centerInside" />
 
     <ImageButton
         android:id="@+id/like_zyt"
