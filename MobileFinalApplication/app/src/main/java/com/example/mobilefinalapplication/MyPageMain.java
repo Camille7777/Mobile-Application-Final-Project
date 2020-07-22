@@ -13,11 +13,28 @@ public class MyPageMain extends AppCompatActivity {
     Button bar_icon3;
     Button bar_icon4;
     Button bar_icon5;
+
+    private SessionHandler session;
+    Button logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_page);
+
+        logout = findViewById((R.id.logout_m));
+        session = new SessionHandler(getApplicationContext());
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                session.logoutUser();
+                Intent i = new Intent(MyPageMain.this, LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
 
         bar_icon1 =findViewById(R.id.bar_icon1);
         bar_icon2 =findViewById(R.id.bar_icon2);

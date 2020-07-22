@@ -2,7 +2,10 @@ package com.example.mobilefinalapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class Covercyc extends AppCompatActivity {
 
@@ -10,5 +13,18 @@ public class Covercyc extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covercyc);
+
+        Button tolog  = findViewById(R.id.toLoginPage_m);
+
+        tolog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Covercyc.this, LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
     }
+
+
 }

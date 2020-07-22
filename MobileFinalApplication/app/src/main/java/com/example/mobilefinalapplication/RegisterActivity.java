@@ -93,7 +93,7 @@ public class RegisterActivity extends AppCompatActivity {
      * Launch Dashboard Activity on Successful Sign Up
      */
     private void loadDashboard() {
-        Intent i = new Intent(getApplicationContext(), DashboardActivity.class);
+        Intent i = new Intent(getApplicationContext(), SleepMain.class);
         startActivity(i);
         finish();
 

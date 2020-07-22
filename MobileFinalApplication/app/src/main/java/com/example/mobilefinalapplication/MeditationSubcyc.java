@@ -55,6 +55,7 @@ public class MeditationSubcyc extends AppCompatActivity {
         firstLinecyc=findViewById(R.id.sessiontext1);
 
         centerimagecyc=findViewById(R.id.centreimagecyc);
+        /*
         bar_icon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,7 +96,7 @@ public class MeditationSubcyc extends AppCompatActivity {
                 startActivity(a);
             }
         });
-
+        */
     }
 
     @SuppressLint("Range")
