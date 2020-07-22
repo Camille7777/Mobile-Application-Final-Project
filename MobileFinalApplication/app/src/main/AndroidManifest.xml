@@ -13,14 +13,17 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".Covercyc">
+
+        </activity>
+        <activity
+        android:name=".setalarm">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-        android:name=".setalarm"></activity>
         <activity android:name=".StopWatchAct" />
         <activity android:name=".NightMain">
 
