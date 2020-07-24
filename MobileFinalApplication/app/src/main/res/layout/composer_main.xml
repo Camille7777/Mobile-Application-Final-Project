@@ -11,14 +11,24 @@
     tools:ignore="NamespaceTypo">
 
     <ImageView
+        android:id="@+id/bkg_zyt"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:alpha="2"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/bkg_zyt" />
+
+    <ImageView
         android:id="@+id/fakebar_zyt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="1200px"
+        android:layout_height="180px"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-8dp"
-        android:contentDescription="@string/app_name"
-        app:srcCompat="@drawable/fakebar_zyt" />
+        android:contentDescription="@string/app_name" />
     <include layout="@layout/context_main" />
+
     <ImageView
         android:id="@+id/line1_zyt"
         android:layout_width="5dp"
@@ -26,7 +36,7 @@
         android:layout_above="@+id/violinHang_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="340dp"
-        android:layout_marginBottom="-78dp"
+        android:layout_marginBottom="-71dp"
         android:contentDescription="@string/Composer"
         android:rotation="-2"
         android:scaleType="fitXY"
@@ -54,7 +64,7 @@
         android:layout_above="@+id/fireHang_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="204dp"
-        android:layout_marginBottom="-73dp"
+        android:layout_marginBottom="-66dp"
         android:contentDescription="@string/Composer"
         android:scaleType="fitXY"
         android:scaleY="0.9"
@@ -92,8 +102,8 @@
         android:layout_height="143dp"
         android:layout_above="@+id/thunderHang_zyt"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="58dp"
         android:contentDescription="@string/Composer"
         android:rotation="-2"
         android:scaleType="fitXY"
@@ -132,8 +142,8 @@
         android:layout_height="70dp"
         android:layout_alignBottom="@+id/birdText_zyt"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/bird_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside"
@@ -225,16 +235,6 @@
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/people_zyt" />
 
-    <ImageView
-        android:id="@+id/bkg_zyt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="49dp"
-        android:alpha="2"
-        android:contentDescription="@string/app_name"
-        app:srcCompat="@drawable/bkg_zyt" />
-
     <ImageButton
         android:id="@+id/start_zyt"
         android:layout_width="46dp"
@@ -245,54 +245,6 @@
         android:layout_toStartOf="@+id/adjust_zyt"
         android:background="@drawable/start_zyt"
         android:contentDescription="@string/Composer"
-        android:scaleType="centerInside" />
-
-    <ImageButton
-        android:id="@+id/icon1_zyt"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_above="@+id/fakebar_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="-2dp"
-        android:background="@drawable/violin_zyt"
-        android:contentDescription="@string/app_name"
-        android:scaleType="centerInside" />
-
-    <ImageButton
-        android:id="@+id/icon2_zyt"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_above="@+id/fakebar_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="-1dp"
-        android:background="@drawable/thunder_zyt"
-        android:contentDescription="@string/app_name"
-        android:scaleType="centerInside" />
-
-    <ImageButton
-        android:id="@+id/icon3_zyt"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_above="@+id/fakebar_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="-1dp"
-        android:background="@drawable/water_zyt"
-        android:contentDescription="@string/app_name"
-        android:scaleType="centerInside" />
-
-    <ImageButton
-        android:id="@+id/icon4_zyt"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_above="@+id/fakebar_zyt"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="-2dp"
-        android:layout_toStartOf="@+id/icon3_zyt"
-        android:background="@drawable/fire_zyt"
-        android:contentDescription="@string/app_name"
         android:scaleType="centerInside" />
 
     <ImageButton
@@ -327,12 +279,60 @@
         android:layout_height="49dp"
         android:layout_above="@+id/fakebar_zyt"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="-2dp"
+        android:layout_marginBottom="2dp"
         android:layout_toStartOf="@+id/icon4_zyt"
         android:background="#00FFFFFF"
         android:contentDescription="@string/app_name"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/rain_zyt" />
+
+    <ImageButton
+        android:id="@+id/icon2_zyt"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/fakebar_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/thunder_zyt"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/icon3_zyt"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/fakebar_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/water_zyt"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/icon4_zyt"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/fakebar_zyt"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@+id/icon3_zyt"
+        android:background="@drawable/fire_zyt"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/icon1_zyt"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/fakebar_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/violin_zyt"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
 
     <com.example.mobilefinalapplication.FontTextView
         android:id="@+id/violinText_zyt"

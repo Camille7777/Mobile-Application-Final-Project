@@ -19,7 +19,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="17dp"
-        android:layout_marginBottom="358dp"/>
+        android:layout_marginBottom="358dp"
+        android:background="@drawable/group_zyt" />
 
     <ImageButton
         android:id="@+id/start_zyt16"
@@ -28,7 +29,7 @@
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
         android:layout_marginEnd="89dp"
-        android:layout_marginBottom="-107dp"
+        android:layout_marginBottom="-107.5dp"
         android:background="@drawable/select4_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -40,7 +41,7 @@
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
         android:layout_marginEnd="142dp"
-        android:layout_marginBottom="-107dp"
+        android:layout_marginBottom="-107.5dp"
         android:background="@drawable/select3_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -139,7 +140,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="484dp" />
+        android:layout_marginBottom="484dp"
+        android:background="@drawable/group_zyt" />
 
     <Button
         android:id="@+id/editbtn_zyt"
@@ -168,7 +170,7 @@
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="19dp"
         android:background="@drawable/select1_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -180,7 +182,7 @@
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
         android:layout_marginEnd="88dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="19dp"
         android:background="@drawable/select2_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -192,7 +194,7 @@
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="19dp"
         android:background="@drawable/select3_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -204,7 +206,7 @@
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
         android:layout_marginEnd="193dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="19dp"
         android:background="@drawable/select4_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
