@@ -42,30 +42,31 @@
 
 
     <include layout="@layout/context_main" />
+
+
     <TextView
         android:id="@+id/tvSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="1010dp"
         android:layout_marginBottom="169dp"
-        android:layout_marginLeft="110dp"
+        android:fontFamily="@font/delius"
         android:text="Healthy On You"
+
         android:textColor="#FF9372"
         android:textSize="24sp"
-
-        android:fontFamily="@font/delius"
         app:layout_constraintBottom_toTopOf="@+id/ivSplash"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/tvSubSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
         android:layout_marginTop="830dp"
         android:layout_marginBottom="169dp"
-        android:layout_marginLeft="50dp"
 
         android:fontFamily="@font/delius"
         android:text="Hope you have a good night!"
