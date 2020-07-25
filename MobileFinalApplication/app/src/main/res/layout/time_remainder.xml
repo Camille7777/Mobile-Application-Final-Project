@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="#232323">
-    <pl.droidsonroids.gif.GifImageView
-    android:id="@+id/gv_error"
-    android:layout_width="176dp"
-    android:layout_height="147dp"
-    android:layout_marginLeft="110dp"
-    android:layout_marginTop="500dp"
-    android:src="@drawable/clock1"/>
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="475dp"
+        android:id="@+id/circle"
+        android:background="@drawable/circle10"
+        android:layout_centerHorizontal="true"
+        />
     <include layout="@layout/context_main" />
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
@@ -80,6 +80,7 @@
         android:id="@+id/timeHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="110dp"
         android:layout_marginTop="348dp"
         android:alpha="0.7"
@@ -89,20 +90,20 @@
 
     <Button
         android:id="@+id/btnstop"
-        android:layout_width="280dp"
+        android:layout_width="60dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="578dp"
+        android:layout_marginTop="528dp"
         android:layout_marginBottom="44dp"
         android:background="@drawable/clock1"
         android:text="Stop"
 
-        android:alpha="0.7"
         android:fontFamily="@font/pistara"
         android:textAllCaps="false"
-        android:textColor="#AF3555"
-        android:textSize="20sp" />
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -110,6 +111,16 @@
         android:id="@+id/animation"
         app:lottie_loop="true"
         app:lottie_fileName="icon1.json"
+        app:lottie_autoPlay="true"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        android:id="@+id/animation5"
+        app:lottie_loop="true"
+        app:lottie_fileName="line5.json"
         app:lottie_autoPlay="true"
         />
 </RelativeLayout>

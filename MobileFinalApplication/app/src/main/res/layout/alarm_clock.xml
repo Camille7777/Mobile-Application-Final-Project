@@ -43,16 +43,6 @@
         android:textColor="#ffffff"
         android:textSize="18dp" />
 
-    <TextView
-        android:id="@+id/textView2cyc"
-        android:layout_width="351dp"
-        android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:alpha="0.6"
-        android:fontFamily="@font/chalkduster"
-        android:text="Sleep"
-        android:textColor="#FAFAFA"
-        android:textSize="50dp" />
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -81,7 +71,7 @@
         android:layout_marginTop="0dp"
         android:amPmTextColor="#AC2C2C"
         android:headerAmPmTextAppearance="@style/TextAppearance.AppCompat.Display3"
-
+        android:theme="@style/MyTimePicker"
         android:alpha="0.9"
         android:headerBackground="@drawable/bg3_rz"
         android:numbersBackgroundColor="#8A5B5B"
@@ -106,7 +96,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:alpha="0.6"
 
         android:fontFamily="@font/pistara"
         android:paddingTop="400dp"

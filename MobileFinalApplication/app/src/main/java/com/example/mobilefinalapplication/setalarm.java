@@ -210,11 +210,14 @@ public class setalarm extends AppCompatActivity implements AdapterView.OnItemSel
         // Output id which user selected
         //Toast.makeText(parent.getContext(), "Spinner item is " + id, Toast.LENGTH_SHORT).show();
         sound_select = (int) id;
+        alarm_state.setText("11111111");
+
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+        alarm_state.setText("22222222221");
     }
 }
 

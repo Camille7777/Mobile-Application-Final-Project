@@ -15,7 +15,7 @@ public class SleepMain extends AppCompatActivity{
     TextView tvSplash, tvSubSplash;
     Button btnget;
     Animation atg, btgone, btgtwo;
-    ImageView ivSplash;
+    ImageView ivSplash,animation;
 
 
     Button bar_icon1;
@@ -33,7 +33,7 @@ public class SleepMain extends AppCompatActivity{
         setContentView(R.layout.sleep_main);
 
 
-
+animation=findViewById(R.id.animation);
         bar_icon1 =findViewById(R.id.bar_icon1);
         bar_icon2 =findViewById(R.id.bar_icon2);
         bar_icon3 =findViewById(R.id.bar_icon3);
@@ -63,7 +63,7 @@ public class SleepMain extends AppCompatActivity{
         tvSplash.startAnimation(btgone);
         tvSubSplash.startAnimation(btgone);
         btnget.startAnimation(btgtwo);
-
+        animation.startAnimation(btgtwo);
         //passing event
         btnget.setOnClickListener(new View.OnClickListener() {
             @Override

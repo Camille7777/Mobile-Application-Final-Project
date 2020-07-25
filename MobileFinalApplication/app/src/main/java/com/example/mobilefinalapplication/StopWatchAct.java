@@ -20,7 +20,7 @@ import com.example.mobilefinalapplication.R;
 public class StopWatchAct extends AppCompatActivity {
     Button btnstart;
     Button btnstop;
-    ImageView icanchor;
+    ImageView icanchor,circle;
     Animation roundingalone;
     Chronometer timeHere;
     TextView alarm_state;
@@ -29,6 +29,7 @@ public class StopWatchAct extends AppCompatActivity {
     Button bar_icon3;
     Button bar_icon4;
     Button bar_icon5;
+
     Animation atg,btgone,btgtwo;
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -43,7 +44,7 @@ public class StopWatchAct extends AppCompatActivity {
         timeHere=findViewById(R.id.timeHere);
         icanchor=findViewById(R.id.icanchor);
         alarm_state=findViewById(R.id.alarm_state);
-
+        circle=findViewById(R.id.circle);
 
         bar_icon1 =findViewById(R.id.bar_icon1);
         bar_icon2 =findViewById(R.id.bar_icon2);
@@ -54,6 +55,7 @@ public class StopWatchAct extends AppCompatActivity {
         btnstart.setAlpha(0);
         timeHere.startAnimation(atg);
         btnstop.setAnimation(btgtwo);
+        circle.setAnimation(btgtwo);
         alarm_state.setAlpha(0);
         //load animations
         roundingalone=AnimationUtils.loadAnimation(this,R.anim.roundingalone);
