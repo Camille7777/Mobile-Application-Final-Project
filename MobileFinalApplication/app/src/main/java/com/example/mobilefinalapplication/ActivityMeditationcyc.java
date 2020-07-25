@@ -14,14 +14,22 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class ActivityMeditationcyc extends AppCompatActivity {
 
-
+    Button bar_icon1;
+    Button bar_icon2;
+    Button bar_icon3;
+    Button bar_icon4;
+    Button bar_icon5;
     ImageView clickImagecyc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meditationcyc);
 
-
+        bar_icon1 =(Button)findViewById(R.id.bar_icon1);
+        bar_icon2 =(Button)findViewById(R.id.bar_icon2);
+        bar_icon3 =(Button)findViewById(R.id.bar_icon3);
+        bar_icon4 =(Button)findViewById(R.id.bar_icon4);
+        bar_icon5 =(Button)findViewById(R.id.bar_icon5);
 
         clickImagecyc= (ImageView) findViewById(R.id.cycmeditationseries1);
         clickImagecyc.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +51,50 @@ public class ActivityMeditationcyc extends AppCompatActivity {
 
                 bottomSheetDialog.setContentView(bottomSheet);
                 bottomSheetDialog.show();
+
+
+
+                bar_icon1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent a = new Intent(ActivityMeditationcyc.this, SleepMain.class);
+                        a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                    }
+                });
+                bar_icon2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent a = new Intent(ActivityMeditationcyc.this, ActivityMeditationcyc.class);
+                       a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                    }
+                });
+                bar_icon3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent a = new Intent(ActivityMeditationcyc.this, ComposerMain.class);
+                       a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                    }
+                });
+                bar_icon4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent a = new Intent(ActivityMeditationcyc.this, NightMain.class);
+                      a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                    }
+                });
+                bar_icon5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent a = new Intent(ActivityMeditationcyc.this,SleepMain.class);
+
+                       a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                    }
+                });
 
 
             }
