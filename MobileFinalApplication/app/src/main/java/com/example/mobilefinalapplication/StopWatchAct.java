@@ -69,7 +69,7 @@ public class StopWatchAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                alarm_state.animate().alpha((float) 0.6).start();
+                alarm_state.animate().alpha(1).start();
 
                 new Thread(new Runnable() {
                     @Override

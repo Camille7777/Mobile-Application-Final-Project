@@ -24,19 +24,7 @@
         tools:ignore="MissingClass" />
 
 
-    <TextView
-        android:id="@+id/composer_zyt"
-        android:layout_width="124dp"
-        android:layout_height="53dp"
-        android:layout_above="@+id/imageView9"
-        android:layout_toStartOf="@+id/logo_zyt"
-        android:fontFamily="@font/neontype"
-        android:text="Sleep"
-        android:textColor="#D4D0BE"
-        android:textSize="36sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="16dp" />
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
@@ -66,8 +54,8 @@
 
         android:fontFamily="@font/pistara"
         android:text="Record your sleep time"
-
-        android:textColor="#FF9372"
+        android:alpha="0.8"
+        android:textColor="#ffffff"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/ivSplash"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,11 +79,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivSplash" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="455dp"
+        android:id="@+id/circle"
+        app:lottie_fileName="circle1.json"
+        android:layout_marginStart="135dp"
+        app:lottie_autoPlay="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        />
     <Button
         android:id="@+id/btnget"
-        android:layout_width="280dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="55dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="500dp"
         android:background="#36353d"
         android:fontFamily="@font/pistara"
@@ -103,7 +104,7 @@
 
         android:text="Record"
         android:textAllCaps="false"
-        android:textColor="#AF3555"
+        android:textColor="#ffffff"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -115,10 +116,26 @@
         android:layout_marginBottom="200dp"
         android:id="@+id/animation"
         app:lottie_loop="true"
-        app:lottie_fileName="line5.json"
+        app:lottie_fileName="line.json"
         app:lottie_autoPlay="true"
         app:layout_constraintBottom_toTopOf="@+id/tvSplash"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"  />
 
+    <TextView
+        android:id="@+id/title_nightTalk"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+
+        android:alpha="0.6"
+        android:fontFamily="@font/neontype"
+        android:text="Sleep"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-9dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
