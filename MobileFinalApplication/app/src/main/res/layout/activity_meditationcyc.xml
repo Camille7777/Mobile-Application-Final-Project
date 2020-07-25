@@ -31,33 +31,35 @@
                 android:layout_alignParentTop="true"
                 android:background="@drawable/meditationtopcyc" />
 
+
             <TextView
                 android:id="@+id/textView2cyc"
-                android:layout_width="351dp"
-                android:layout_height="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
                 android:alpha="0.6"
-                android:fontFamily="@font/chalkduster"
+                android:fontFamily="@font/neontype"
                 android:text="Meditation"
                 android:textColor="#FAFAFA"
-                android:textSize="50dp" />
-
+                android:textSize="48sp" />
 
             <TextView
                 android:id="@+id/newmeditationseriescyc"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_below="@id/TopBGcyc"
-                android:layout_marginLeft="-20dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginEnd="50dp"
                 android:layout_marginBottom="60dp"
                 android:alpha="0.7"
-                android:fontFamily="@font/segoepr"
+                android:fontFamily="@font/pistara"
                 android:gravity="center"
                 android:text="new"
                 android:textAlignment="center"
                 android:textColor="#FAFAFA"
-                android:textSize="30dp" />
+                android:textSize="48sp" />
 
             <ImageView
                 android:id="@+id/newmeditationcyc1"
@@ -91,16 +93,16 @@
                 android:layout_width="280dp"
                 android:layout_height="60dp"
                 android:layout_below="@id/TopBGcyc"
-                android:layout_marginLeft="-20dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="200dp"
                 android:layout_marginEnd="50dp"
                 android:alpha="0.7"
-                android:fontFamily="@font/segoepr"
+                android:fontFamily="@font/pistara"
                 android:gravity="center"
                 android:text="meditation series"
                 android:textAlignment="center"
                 android:textColor="#FAFAFA"
-                android:textSize="30dp" />
+                android:textSize="48sp" />
 
             <ImageView
                 android:id="@+id/smallpopcyc"

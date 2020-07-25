@@ -340,12 +340,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/rainHang_zyt"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="323dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="36dp"
         android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
         android:text="@string/violin"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:fontType="GOU" />
 
     <com.example.mobilefinalapplication.FontTextView
@@ -355,67 +356,12 @@
         android:layout_above="@+id/rainHang_zyt"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="322dp"
-        android:layout_marginBottom="-92dp"
+        android:layout_marginBottom="-99dp"
         android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
         android:text="@string/rainy"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:fontType="GOU" />
-
-    <com.example.mobilefinalapplication.FontTextView
-        android:id="@+id/fireText_zyt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/rainHang_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="194dp"
-        android:layout_marginBottom="26dp"
-        android:contentDescription="@string/app_name"
-        android:text="@string/fire"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:fontType="GOU" />
-
-    <com.example.mobilefinalapplication.FontTextView
-        android:id="@+id/thunderText_zyt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/rainHang_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="-79dp"
-        android:contentDescription="@string/app_name"
-        android:text="@string/thunder"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:fontType="GOU" />
-
-    <com.example.mobilefinalapplication.FontTextView
-        android:id="@+id/waterText_zyt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/rainHang_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="-187dp"
-        android:contentDescription="@string/app_name"
-        android:text="@string/water_drop"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:fontType="GOU" />
-
-    <com.example.mobilefinalapplication.FontTextView
-        android:id="@+id/waveText_zyt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/rainHang_zyt"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="38dp"
-        android:contentDescription="@string/app_name"
-        android:text="@string/wave"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:fontType="GOU" />
 
     <com.example.mobilefinalapplication.FontTextView
@@ -424,12 +370,73 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/rainHang_zyt"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="-97dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="-103dp"
         android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
         android:text="@string/bird"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="24sp"
+        app:fontType="GOU" />
+
+    <com.example.mobilefinalapplication.FontTextView
+        android:id="@+id/thunderText_zyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rainHang_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="-85dp"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
+        android:text="@string/thunder"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontType="GOU" />
+
+    <com.example.mobilefinalapplication.FontTextView
+        android:id="@+id/waterText_zyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rainHang_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="-193dp"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
+        android:text="@string/water_drop"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontType="GOU" />
+
+    <com.example.mobilefinalapplication.FontTextView
+        android:id="@+id/waveText_zyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rainHang_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="29dp"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
+        android:text="@string/wave"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontType="GOU" />
+
+    <com.example.mobilefinalapplication.FontTextView
+        android:id="@+id/fireText_zyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rainHang_zyt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/pistara"
+        android:text="@string/fire"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:fontType="GOU" />
 
 
@@ -613,15 +620,15 @@
 
     <TextView
         android:id="@+id/composer_zyt"
-        android:layout_width="222dp"
-        android:layout_height="92dp"
+        android:layout_width="309dp"
+        android:layout_height="63dp"
         android:layout_above="@+id/imageView9"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="-28dp"
+        android:layout_marginBottom="71dp"
         android:layout_toStartOf="@+id/logo_zyt"
-        android:fontFamily="@font/chalkduster"
+        android:fontFamily="@font/neontype"
         android:text="@string/Composer"
         android:textColor="#D4D0BE"
-        android:textSize="36sp" />
+        android:textSize="48sp" />
 
 </RelativeLayout>

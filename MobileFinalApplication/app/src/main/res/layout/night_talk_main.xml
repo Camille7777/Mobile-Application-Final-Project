@@ -24,48 +24,49 @@
     <include
         layout="@layout/context_main" />
 
+
     <TextView
         android:id="@+id/title_nightTalk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginStart = "10dp"
+        android:layout_marginTop="17dp"
         android:alpha="0.6"
-        android:fontFamily="@font/chalkduster"
+        android:fontFamily="@font/neontype"
         android:text="NightTalk"
         android:textColor="#FAFAFA"
-        android:textSize="50dp" />
-
+        android:textSize="48dp" />
 
     <TextView
         android:id="@+id/text_rz"
         android:layout_width="284dp"
         android:layout_height="106dp"
         android:layout_marginStart="80dp"
-        android:layout_marginLeft="-120dp"
+
         android:layout_marginTop="200dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/segoepr"
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:text="I lost my work, so as my sleep. Anyway, hope you have a good dream tonight.  "
-        android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:textColor="#FFFFFF"
         android:textSize="18dp" />
 
     <TextView
         android:id="@+id/text2_rz"
-        android:layout_width="400dp"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_rz"
-        android:layout_marginStart="200dp"
+        android:layout_marginStart="180dp"
         android:layout_marginTop="-3dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="10dp"
-        android:fontFamily="@font/delius"
-        android:text="---- Bejing, China"
+        android:fontFamily="@font/segoepr"
+        android:text="--- Bejing, China"
         android:textColor="#F7F2F0"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
 
     <ImageView
@@ -106,8 +107,9 @@
         android:layout_marginTop="97dp"
         android:backgroundTint="#80FFFFFF"
         android:ems="10"
-        android:hint="@string/say_something"
+        android:text="@string/say_something"
         android:inputType="textPersonName"
+        android:fontFamily="@font/pistara"
         android:textColor="#FCF1E6E6" />
 
     <EditText
@@ -118,8 +120,9 @@
         android:layout_marginStart="50dp"
         android:backgroundTint="#80FFFFFF"
         android:ems="10"
-        android:hint="@string/textname"
+        android:text="@string/textname"
         android:inputType="textPersonName"
+        android:fontFamily="@font/pistara"
         android:textColor="#FCF1E6E6" />
 
 

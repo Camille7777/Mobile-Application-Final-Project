@@ -14,11 +14,11 @@
         android:layout_height="70dp"
 
         android:layout_alignParentTop="true"
-        android:fontFamily="@font/segoepr"
+        android:fontFamily="@font/pistara"
         android:text="Night Yoga Nidra"
         android:textAlignment="center"
         android:textColor="#DEE8E5E5"
-        android:textSize="36sp" />
+        android:textSize="48sp" />
 
     <ImageView
         android:id="@+id/subpagedialogcyc"

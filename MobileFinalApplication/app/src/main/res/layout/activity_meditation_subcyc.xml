@@ -27,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
 
-        android:fontFamily="@font/pistara"
         android:layout_marginTop="100dp"
+        android:fontFamily="@font/pistara"
         android:text="Killing Anxiety"
         android:textColor="#D1D2D3"
         android:textSize="46sp" />

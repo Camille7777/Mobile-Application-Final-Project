@@ -20,21 +20,23 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingClass" />
+
 
     <TextView
         android:id="@+id/composer_zyt"
-        android:layout_width="222dp"
-        android:layout_height="92dp"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
         android:layout_above="@+id/imageView9"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="5dp"
         android:layout_toStartOf="@+id/logo_zyt"
-        android:fontFamily="@font/chalkduster"
+        android:fontFamily="@font/neontype"
         android:text="Sleep"
         android:textColor="#D4D0BE"
-        android:textSize="36sp" />
-
+        android:textSize="36sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
@@ -49,14 +51,16 @@
         />
 
 
-    <include layout="@layout/context_main" />
-
+    <include
+        layout="@layout/context_main"
+        tools:layout_editor_absoluteX="-44dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/tvSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="1010dp"
         android:layout_marginBottom="109dp"
 
@@ -64,10 +68,11 @@
         android:text="Record your sleep time"
 
         android:textColor="#FF9372"
-        android:textSize="24sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/ivSplash"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
 
     <TextView
         android:id="@+id/tvSubSplash"
@@ -90,17 +95,16 @@
         android:id="@+id/btnget"
         android:layout_width="280dp"
         android:layout_height="55dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="500dp"
         android:background="#36353d"
-        android:text="Record"
-
-
         android:fontFamily="@font/pistara"
+
+
+        android:text="Record"
         android:textAllCaps="false"
         android:textColor="#AF3555"
-        android:textSize="20sp"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

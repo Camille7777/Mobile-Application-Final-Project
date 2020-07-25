@@ -28,7 +28,7 @@
         android:layout_height="30dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="@font/delius"
         android:text="INSPIRATION STUDIO"
         android:textAlignment="center"
 
@@ -40,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00FFFFFF"
+        android:fontFamily="@font/pistara"
         android:text="" />
 
 

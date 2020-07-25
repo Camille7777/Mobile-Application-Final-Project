@@ -17,9 +17,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="358dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="341dp"
         android:background="@drawable/group_zyt" />
 
     <ImageButton
@@ -28,8 +28,8 @@
         android:layout_height="44dp"
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
-        android:layout_marginEnd="89dp"
-        android:layout_marginBottom="-107.5dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="-124dp"
         android:background="@drawable/select4_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -40,8 +40,8 @@
         android:layout_height="44dp"
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="-107.5dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="-125dp"
         android:background="@drawable/select3_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -52,8 +52,8 @@
         android:layout_height="44dp"
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="-107dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="-125dp"
         android:background="@drawable/select2_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -63,8 +63,8 @@
         android:layout_width="21dp"
         android:layout_height="22dp"
         android:layout_above="@+id/imageView5"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-127dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="-143dp"
         android:layout_toStartOf="@+id/button5"
         android:background="@drawable/edit_zyt" />
 
@@ -74,8 +74,8 @@
         android:layout_height="44dp"
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
-        android:layout_marginEnd="308dp"
-        android:layout_marginBottom="-106dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="-125dp"
         android:background="@drawable/start_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
@@ -87,32 +87,32 @@
         android:layout_above="@+id/imageView5"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="33dp"
-        android:layout_marginBottom="-127dp"
+        android:layout_marginBottom="-144dp"
         android:background="@drawable/delete_zyt" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="148dp"
-        android:layout_height="30dp"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
         android:layout_above="@+id/imageView5"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="-129dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="-141dp"
         android:layout_toStartOf="@+id/editbtn_zyt"
-        android:fontFamily="@font/delius"
+        android:fontFamily="@font/pistara"
         android:text="Rainy Days"
         android:textAlignment="center"
         android:textColor="#D4D0BE"
-        android:textSize="20sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/composer_zyt2"
-        android:layout_width="306dp"
-        android:layout_height="95dp"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="77dp"
         android:layout_marginBottom="43dp"
-        android:fontFamily="@font/chalkduster"
+        android:fontFamily="@font/neontype"
         android:text="My Collection"
         android:textColor="#D4D0BE"
         android:textSize="36sp" />
@@ -217,25 +217,25 @@
         android:layout_height="44dp"
         android:layout_alignEnd="@+id/imageView5"
         android:layout_alignBottom="@+id/imageView5"
-        android:layout_marginEnd="304dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="19dp"
         android:background="@drawable/start_zyt"
         android:contentDescription="@string/Composer"
         android:scaleType="centerInside" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="198dp"
-        android:layout_height="28dp"
+        android:layout_width="179dp"
+        android:layout_height="39dp"
         android:layout_above="@+id/imageView5"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/editbtn_zyt"
-        android:fontFamily="@font/delius"
+        android:fontFamily="@font/pistara"
         android:text="Suitable for relax"
         android:textAlignment="center"
         android:textColor="#D4D0BE"
-        android:textSize="20sp" />
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
