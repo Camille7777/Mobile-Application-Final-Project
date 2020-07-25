@@ -27,5 +27,7 @@
     <string name="_50">50%</string>
     <string name="collect_to_list">Collect to List</string>
     <string name="my_collection">My Collection</string>
+    <string name="textname">Name</string>
+    <string name="say_something">Say Something</string>
 
 </resources>
