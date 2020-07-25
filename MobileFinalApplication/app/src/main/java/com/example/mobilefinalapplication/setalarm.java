@@ -5,6 +5,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.icu.util.Calendar;
+import android.icu.util.TimeZone;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -25,6 +26,9 @@ import android.widget.Toast;
 
 import com.example.mobilefinalapplication.MainActivity;
 import com.example.mobilefinalapplication.R;
+
+import java.sql.Time;
+import java.util.Timer;
 
 public class setalarm extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Button bar_icon1;
@@ -57,7 +61,7 @@ public class setalarm extends AppCompatActivity implements AdapterView.OnItemSel
         final Calendar calendar = Calendar.getInstance();
 
         // Create intent for AlarmReceiver class, send only once
-        final Intent my_intent = new Intent(setalarm.this, com.example.mobilefinalapplication.AlarmReceiver.class);
+        final Intent my_intent = new Intent(setalarm.this, AlarmReceiver.class);
 
 
         bar_icon1 =findViewById(R.id.bar_icon1);
@@ -70,23 +74,25 @@ public class setalarm extends AppCompatActivity implements AdapterView.OnItemSel
 
 
         // Create spinner in main UI and corresponding ArrayAdapter
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource
-                (this, R.array.stepbrothers_array, android.R.layout.simple_spinner_item);
+        //Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        //ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource
+                //(this, R.array.stepbrothers_array, android.R.layout.simple_spinner_item);
         // Specify layout used for option list
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply adapter to spinner
-        spinner.setAdapter(adapter);
+       // spinner.setAdapter(adapter);
         // Set onClickListener for spinner
-        spinner.setOnItemSelectedListener(this);
+       // spinner.setOnItemSelectedListener(this);
 
 
         // Initialize start button and create onClickListener to start alarm
         Button alarm_on = (Button) findViewById(R.id.alarm_on);
         Button alarm_off = (Button) findViewById(R.id.alarm_off);
-        alarm_on.startAnimation(atg);
 
-        alarm_off.startAnimation(atg);
+        alarm_timepicker.startAnimation(atg);
+        alarm_state.startAnimation(btgone);
+        alarm_on.startAnimation(btgtwo);
+        alarm_off.startAnimation(btgtwo);
         alarm_on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -123,9 +129,25 @@ public class setalarm extends AppCompatActivity implements AdapterView.OnItemSel
                 // Set alarm manager
                 alarm_manager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pending_intent);
 
-                Intent a = new Intent(setalarm.this, StopWatchAct.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(a);
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        try {
+                            Thread.sleep(1000); // 休眠1秒
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        Intent a = new Intent(setalarm.this, StopWatchAct.class);
+                        a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                        /**
+                         * 延时执行的代码
+                         */
+
+                    }
+                }).start();
 
             }
         });

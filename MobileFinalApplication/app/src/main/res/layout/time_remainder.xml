@@ -6,31 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#070915"><![CDATA[
+    android:background="#232323">
+    <pl.droidsonroids.gif.GifImageView
+    android:id="@+id/gv_error"
+    android:layout_width="176dp"
+    android:layout_height="147dp"
+    android:layout_marginLeft="110dp"
+    android:layout_marginTop="500dp"
+    android:src="@drawable/clock1"/>
 
-    /*app:layout_constrainEnd_toEndOf="parent"
-        app:layout_comstraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-
-    ]]>
     <include layout="@layout/context_main" />
-
-    <ImageView
-        android:id="@+id/bgcircle"
-        android:layout_width="276dp"
-        android:layout_height="247dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="50dp"
-        app:srcCompat="@drawable/bgcircle" /><![CDATA[
-
-    /*app:layout_constrainEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-
-    ]]>
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="1500dp"
@@ -41,21 +26,42 @@
         app:lottie_fileName="line2.json"
         app:lottie_autoPlay="true"
         />
+    <ImageView
+        android:id="@+id/bgcircle"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.7"
+        app:srcCompat="@drawable/clockplate2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="450dp"
+        android:textSize="25dp"
+        android:text="Record Off!"
+        android:fontFamily="@font/pistara"
+        android:alpha="0.6"
+        android:textColor="#ffffff"
+        android:id="@+id/alarm_state"
+        android:layout_centerHorizontal="true" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/animation"
+        android:id="@+id/animation3"
         app:lottie_loop="true"
-        app:lottie_fileName="sleep.json"
+        app:lottie_fileName="line3.json"
         app:lottie_autoPlay="true"
         />
     <ImageView
         android:id="@+id/icanchor"
-        android:layout_width="358dp"
-        android:layout_height="357dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/icanchor" />
+        android:layout_width="158dp"
+        android:layout_height="537dp"
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/icanchor3" />
 
     <Button
         android:id="@+id/btnstart"
@@ -68,26 +74,17 @@
         android:text="Start"
         android:textAllCaps="false"
         android:textColor="#FFF"
-        android:textSize="20sp"/><![CDATA[
-        /*app:layout_constrainEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_comstraintHorizontal_bias="0.495"
-        app:layout_constraintTop_toTopOf="@+id/btnstop"/>
-
-    /*app:layout_comstraintHorizontal_bias="0.498"
-        app:layout_constrainEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toButtomOf="@+id/bgcircle" />
-
-    ]]>
-
+        android:textSize="20sp"
+        android:visibility="invisible"/>
     <Chronometer
         android:id="@+id/timeHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="110dp"
         android:layout_marginTop="348dp"
-        android:textColor="#FFF"
+        android:alpha="0.7"
+        android:fontFamily="@font/pistara"
+        android:textColor="#fff"
         android:textSize="62sp" />
 
     <Button
@@ -98,13 +95,21 @@
         android:layout_marginLeft="70dp"
         android:layout_marginTop="578dp"
         android:layout_marginBottom="44dp"
-        android:background="@drawable/rz_moon"
+        android:background="@drawable/clock1"
         android:text="Stop"
+
+        android:alpha="0.7"
+        android:fontFamily="@font/pistara"
         android:textAllCaps="false"
         android:textColor="#AF3555"
         android:textSize="20sp" />
-    /*app:layout_constrainEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_comstraintHorizontal_bias="0.495"
-    app:layout_constraintTop_toTopOf="parent"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:id="@+id/animation"
+        app:lottie_loop="true"
+        app:lottie_fileName="icon1.json"
+        app:lottie_autoPlay="true"
+        />
 </RelativeLayout>

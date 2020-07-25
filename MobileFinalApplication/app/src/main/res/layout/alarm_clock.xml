@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:scrollbarTrackVertical="@drawable/adjust_zyt"
     app:srcCompat="@drawable/rz_nighttalk">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="800dp"
+        android:alpha="0.9"
+        android:background="@drawable/rz_nighttalk" />
+
+    <Button
+        android:id="@+id/alarm_on"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_state"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg4_rz"
+        android:fontFamily="@font/pistara"
+        android:text="Start"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/alarm_off"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_state"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg4_rz"
+        android:fontFamily="@font/pistara"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
     <TextView
         android:id="@+id/textView2cyc"
         android:layout_width="351dp"
@@ -17,145 +54,126 @@
         android:textColor="#FAFAFA"
         android:textSize="50dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="500dp"
-        android:layout_height="700dp"
-        app:srcCompat="@drawable/rz_nighttalk"
-        />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="269dp"
-        android:layout_marginTop="0dp"
-        android:id="@+id/ivSplash"
-        app:lottie_loop="true"
-        app:lottie_fileName="alarm.json"
-        app:lottie_autoPlay="true"
-        />
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="1500dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="0dp"
         android:id="@+id/moon"
-        app:lottie_loop="true"
-        app:lottie_fileName="line.json"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="100dp"
         app:lottie_autoPlay="true"
-        />
+        app:lottie_fileName="line.json"
+        app:lottie_loop="true" />
+
     <include layout="@layout/context_main" />
+
     <TimePicker
         android:id="@+id/timePicker"
+        style="@android:style/Widget.Material.Light.TimePicker"
+        android:calendarViewShown="false"
         android:layout_width="450dp"
         android:layout_height="421dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="0dp"
+        android:amPmTextColor="#AC2C2C"
+        android:headerAmPmTextAppearance="@style/TextAppearance.AppCompat.Display3"
+
+        android:alpha="0.9"
+        android:headerBackground="@drawable/bg3_rz"
+        android:numbersBackgroundColor="#8A5B5B"
+        android:numbersSelectorColor="#232323"
+        android:textAlignment="viewEnd"
+        android:textDirection="inherit"
         app:srcCompat="@drawable/rain_zyt" />
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="269dp"
         android:layout_marginTop="400dp"
-        android:id="@+id/star"
-        app:lottie_loop="true"
-        app:lottie_fileName="star.json"
+        android:layout_marginBottom="269dp"
         app:lottie_autoPlay="true"
-        />
+        app:lottie_fileName="star.json"
+        app:lottie_loop="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/alarm_state"
-        android:layout_marginTop="5dp"
-        android:textSize="18dp"
-        android:text="Start"
-        android:id="@+id/alarm_on"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/alarm_state"
-        android:layout_marginTop="5dp"
-        android:textSize="18dp"
-        android:text="Back"
-        android:id="@+id/alarm_off"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
     <TextView
+        android:id="@+id/alarm_state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.6"
+
+        android:fontFamily="@font/pistara"
+        android:paddingTop="400dp"
         android:text="Did you set the alarm?"
-        android:id="@+id/alarm_state"
-        android:layout_below="@+id/timePicker"
-        android:layout_centerHorizontal="true" />
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
 
     <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18dp"
-        android:id="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="717dp"
+        android:textSize="8dp"
+        android:visibility="invisible" />
+
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="469dp"
         android:layout_marginTop="0dp"
-        android:id="@+id/star3"
-        app:lottie_loop="true"
-        app:lottie_fileName="star3.json"
+        android:layout_marginBottom="469dp"
         app:lottie_autoPlay="true"
-        />
+        app:lottie_fileName="star3.json"
+        app:lottie_loop="true" />
+
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star_3"
         android:layout_width="600dp"
         android:layout_height="1500dp"
         android:layout_marginTop="0dp"
-        android:id="@+id/star_3"
-        app:lottie_loop="true"
-        app:lottie_fileName="star3.json"
         app:lottie_autoPlay="true"
-        />
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="469dp"
-        android:id="@+id/star33"
-        app:lottie_loop="true"
         app:lottie_fileName="star3.json"
-        app:lottie_autoPlay="true"
-        />
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="469dp"
-        android:id="@+id/star333"
-        app:lottie_loop="true"
-        app:lottie_fileName="star3.json"
-        app:lottie_autoPlay="true"
-        />
+        app:lottie_loop="true" />
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="469dp"
+        android:layout_marginBottom="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="star3.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star333"
         android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
         android:layout_marginTop="469dp"
-        android:layout_marginStart="300dp"
-        android:id="@+id/star3333"
-        app:lottie_loop="true"
-        app:lottie_fileName="star3.json"
+        android:layout_marginBottom="0dp"
         app:lottie_autoPlay="true"
-        />
+        app:lottie_fileName="star3.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star3333"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="469dp"
+        android:layout_marginBottom="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="star3.json"
+        app:lottie_loop="true" />
+
 </RelativeLayout>
