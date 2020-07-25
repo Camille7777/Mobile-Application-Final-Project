@@ -104,6 +104,7 @@
         android:layout_below="@+id/text_rz"
         android:layout_marginStart="50dp"
         android:layout_marginTop="97dp"
+        android:backgroundTint="#80FFFFFF"
         android:ems="10"
         android:hint="@string/say_something"
         android:inputType="textPersonName"
@@ -115,10 +116,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etEnterText_m"
         android:layout_marginStart="50dp"
+        android:backgroundTint="#80FFFFFF"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/textname"
-        android:textColor="#FCF1E6E6"/>
+        android:inputType="textPersonName"
+        android:textColor="#FCF1E6E6" />
 
 
 </RelativeLayout>
