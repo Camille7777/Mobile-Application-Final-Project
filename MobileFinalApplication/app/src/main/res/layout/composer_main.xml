@@ -472,7 +472,7 @@
         android:layout_marginTop="53dp"
         android:layout_marginBottom="189dp"
         android:background="@drawable/adjustbkg_zyt"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <LinearLayout
             android:id="@+id/library_zyt"
@@ -510,42 +510,42 @@
         </LinearLayout>
 
         <com.example.mobilefinalapplication.FontTextView
-            android:id="@+id/percenr1_zyt"
+            android:id="@+id/percent1_zyt"
             android:layout_width="67dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="239dp"
-            android:text="@string/_25"
+            android:text="10%"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:fontType="GOU" />
 
         <com.example.mobilefinalapplication.FontTextView
-            android:id="@+id/percenr2_zyt"
+            android:id="@+id/percent2_zyt"
             android:layout_width="62dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="134dp"
-            android:text="@string/_50"
+            android:text="10%"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:fontType="GOU" />
 
         <com.example.mobilefinalapplication.FontTextView
-            android:id="@+id/percenr3_zyt"
+            android:id="@+id/percent3_zyt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="36dp"
-            android:text="@string/_100"
+            android:text="10%"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
@@ -555,8 +555,8 @@
             android:id="@+id/verticalText"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_below="@id/percenr1_zyt"
-            android:layout_alignEnd="@+id/percenr1_zyt"
+            android:layout_below="@id/percent1_zyt"
+            android:layout_alignEnd="@+id/percent1_zyt"
             android:layout_marginTop="-24dp"
             android:layout_marginEnd="7dp"
             android:text="@string/vertical" />
@@ -602,6 +602,12 @@
             android:progressDrawable="@drawable/progress_zyt"
             android:splitTrack="false"
             android:thumb="@drawable/thumb_zyt" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
 
     </RelativeLayout>
 

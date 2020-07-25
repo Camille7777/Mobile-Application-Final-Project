@@ -2,20 +2,22 @@ package com.example.mobilefinalapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.os.Bundle;
 import android.media.MediaPlayer;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 
 public class ComposerMain extends AppCompatActivity{
     ImageButton playViolin, playFire, playWave, playRainy, playThunder, playBird, playWaterD;
     ImageButton likeBtn;
     ImageButton controlBtn;
     ImageButton adjustBtn;
-
 
     Button bar_icon1;
     Button bar_icon2;
@@ -25,6 +27,18 @@ public class ComposerMain extends AppCompatActivity{
 
     Button myCollection;
     Button collecttonlist;
+
+    VerticalSeekBar seekBarVolume1;
+    VerticalSeekBar seekBarVolume2;
+    VerticalSeekBar seekBarVolume3;
+    FontTextView percent1_zyt;
+    FontTextView percent2_zyt;
+    FontTextView percent3_zyt;
+
+    AudioManager audioManager1;
+    AudioManager audioManager2;
+    AudioManager audioManager3;
+
     MediaPlayer mpzyt_violin, mpzyt_fire, mpzyt_wave, mpzyt_rainy, mpzyt_thunder, mpzyt_bird, mpzyt_water;
     int flag = 0;
     int flag_ctl = 0;
@@ -41,8 +55,6 @@ public class ComposerMain extends AppCompatActivity{
         bar_icon3 =findViewById(R.id.bar_icon3);
         bar_icon4 =findViewById(R.id.bar_icon4);
         bar_icon5 =findViewById(R.id.bar_icon5);
-
-
 
         mpzyt_violin = MediaPlayer.create(ComposerMain.this, R.raw.violin_zyt);
         mpzyt_fire = MediaPlayer.create(ComposerMain.this, R.raw.fire_zyt);
@@ -74,6 +86,76 @@ public class ComposerMain extends AppCompatActivity{
         myCollection = findViewById(R.id.myCollection_zyt);
         collecttonlist = findViewById(R.id.collectionlist_zyt);
         volumePopup = findViewById(R.id.owncomposer_zyt);
+
+        seekBarVolume1 = findViewById(R.id.vseekbar1_zyt);
+        seekBarVolume2 = findViewById(R.id.vseekbar2_zyt);
+        seekBarVolume3 = findViewById(R.id.vseekbar3_zyt);
+
+        audioManager1 = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        audioManager2 = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        audioManager3 = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        percent1_zyt = findViewById(R.id.percent1_zyt);
+        percent2_zyt = findViewById(R.id.percent2_zyt);
+        percent3_zyt = findViewById(R.id.percent3_zyt);
+
+        //int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        //final int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+        //seekBarVolume1.setMax(maxVolume);
+        //seekBarVolume1.setProgress(curVolume);
+
+        seekBarVolume1.setOnSeekBarChangeListener(new VerticalSeekBar.OnSeekBarChangeListener(){
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                audioManager1.setStreamVolume(AudioManager.STREAM_MUSIC, progress,0);
+                percent1_zyt.setText(progress + "%");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+
+        });
+
+        seekBarVolume2.setOnSeekBarChangeListener(new VerticalSeekBar.OnSeekBarChangeListener(){
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                audioManager2.setStreamVolume(AudioManager.STREAM_MUSIC, progress,0);
+                percent2_zyt.setText(progress + "%");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+
+        });
+
+        seekBarVolume3.setOnSeekBarChangeListener(new VerticalSeekBar.OnSeekBarChangeListener(){
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                audioManager3.setStreamVolume(AudioManager.STREAM_MUSIC, progress,0);
+                percent3_zyt.setText(progress + "%");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+
+        });
 
         playViolin.setOnClickListener(new View.OnClickListener() {
             @Override
