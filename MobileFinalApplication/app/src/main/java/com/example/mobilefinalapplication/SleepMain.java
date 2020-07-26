@@ -15,7 +15,7 @@ public class SleepMain extends AppCompatActivity{
     TextView tvSplash, tvSubSplash;
     Button btnget;
     Animation atg, btgone, btgtwo;
-    ImageView ivSplash,animation;
+    ImageView ivSplash,animation,circle;
 
 
     Button bar_icon1;
@@ -43,7 +43,7 @@ animation=findViewById(R.id.animation);
 
 
 
-
+        circle=findViewById(R.id.circle);
         tvSplash = findViewById(R.id.tvSplash);
         tvSubSplash = findViewById(R.id.tvSubSplash);
         ivSplash = findViewById(R.id.ivSplash);

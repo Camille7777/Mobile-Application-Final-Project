@@ -83,6 +83,19 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="455dp"
+        android:id="@+id/circle_final"
+        app:lottie_fileName="circle_fianl.json"
+        android:layout_marginStart="135dp"
+        app:lottie_autoPlay="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        app:lottie_loop="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="455dp"
         android:id="@+id/circle"
         app:lottie_fileName="circle1.json"
         android:layout_marginStart="135dp"
@@ -100,8 +113,8 @@
         android:layout_marginTop="500dp"
         android:background="#36353d"
         android:fontFamily="@font/pistara"
-
-
+        android:textStyle="bold"
+        android:alpha="0.7"
         android:text="Record"
         android:textAllCaps="false"
         android:textColor="#ffffff"

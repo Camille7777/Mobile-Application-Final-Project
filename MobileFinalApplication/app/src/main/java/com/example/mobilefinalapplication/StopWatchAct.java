@@ -1,8 +1,6 @@
 package com.example.mobilefinalapplication;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
@@ -15,7 +13,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobilefinalapplication.R;
+import javax.xml.datatype.Duration;
+
 
 public class StopWatchAct extends AppCompatActivity {
     Button btnstart;
@@ -23,13 +22,13 @@ public class StopWatchAct extends AppCompatActivity {
     ImageView icanchor,circle;
     Animation roundingalone;
     Chronometer timeHere;
-    TextView alarm_state;
+    TextView alarm_state,alarm_state2;
     Button bar_icon1;
     Button bar_icon2;
     Button bar_icon3;
     Button bar_icon4;
     Button bar_icon5;
-
+    Duration d;
     Animation atg,btgone,btgtwo;
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -44,6 +43,7 @@ public class StopWatchAct extends AppCompatActivity {
         timeHere=findViewById(R.id.timeHere);
         icanchor=findViewById(R.id.icanchor);
         alarm_state=findViewById(R.id.alarm_state);
+        alarm_state2=findViewById(R.id.alarm_state2);
         circle=findViewById(R.id.circle);
 
         bar_icon1 =findViewById(R.id.bar_icon1);
@@ -57,19 +57,37 @@ public class StopWatchAct extends AppCompatActivity {
         btnstop.setAnimation(btgtwo);
         circle.setAnimation(btgtwo);
         alarm_state.setAlpha(0);
+        alarm_state2.setAlpha(0);
         //load animations
         roundingalone=AnimationUtils.loadAnimation(this,R.anim.roundingalone);
         icanchor.startAnimation(roundingalone);
         btnstop.animate().alpha(1).translationY(-80).setDuration(300).start();
         btnstart.animate().alpha(0).setDuration(300).start();
+
+
+
+     
+
         timeHere.setBase(SystemClock.elapsedRealtime());
         timeHere.start();
+        long millis=SystemClock.elapsedRealtime();
+
 
         btnstop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 alarm_state.animate().alpha(1).start();
+
+                int elapsed = (int)(SystemClock.elapsedRealtime()-timeHere.getBase());
+                timeHere.stop();
+                icanchor.clearAnimation();
+                if(elapsed<60000)
+                alarm_state2.setText("Your sleep time is "+String.valueOf(elapsed/1000)+" sec");
+                else if (elapsed>60000)
+                {
+                    alarm_state2.setText("Your sleep time is "+String.valueOf(elapsed/60000)+" min "+String.valueOf((elapsed%60000)/1000)+" sec");
+                }
 
                 new Thread(new Runnable() {
                     @Override
@@ -80,6 +98,21 @@ public class StopWatchAct extends AppCompatActivity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
+                        alarm_state.setAlpha(0);
+                        alarm_state2.setAlpha(1);
+                    }
+                }).start();
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+
+
+                        try {
+                            Thread.sleep(3000); // 休眠1秒
+                        } catch (InterruptedException d) {
+                            d.printStackTrace();
+                        }
 
                         Intent a = new Intent(StopWatchAct.this, com.example.mobilefinalapplication.setalarm.class);
                         a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
@@ -87,7 +120,6 @@ public class StopWatchAct extends AppCompatActivity {
 
                     }
                 }).start();
-
             }
 
         });

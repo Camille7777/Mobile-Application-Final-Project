@@ -46,7 +46,17 @@
         android:textColor="#ffffff"
         android:id="@+id/alarm_state"
         android:layout_centerHorizontal="true" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="430dp"
+        android:textSize="25dp"
+        android:text="Record Off!"
+        android:fontFamily="@font/pistara"
+        android:alpha="0.6"
+        android:textColor="#ffffff"
+        android:id="@+id/alarm_state2"
+        android:layout_centerHorizontal="true" />
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
