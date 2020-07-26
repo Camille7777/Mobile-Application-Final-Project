@@ -42,10 +42,10 @@ public class RegisterActivity extends AppCompatActivity {
         session = new SessionHandler(getApplicationContext());
         setContentView(R.layout.register_page);
 
+        etFullName = findViewById(R.id.registerInputEmail_m);
         etUsername = findViewById(R.id.registerInputName_m);
         etPassword = findViewById(R.id.registerInputPw_m);
         etConfirmPassword = findViewById(R.id.registerInputConfirmPw_m);
-        etFullName = findViewById(R.id.registerInputEmail_m);
 
         Button login = findViewById(R.id.registerToLogin_m);
         Button register = findViewById(R.id.registerBtn_m);
