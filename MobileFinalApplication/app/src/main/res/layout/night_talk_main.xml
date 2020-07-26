@@ -56,15 +56,15 @@
 
     <TextView
         android:id="@+id/text2_rz"
-        android:layout_width="189dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_rz"
-        android:layout_marginStart="180dp"
+        android:layout_marginStart="240dp"
         android:layout_marginTop="-3dp"
 
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/segoepr"
-        android:text="--- Bejing, China"
+        android:text="Bejing, China"
         android:textColor="#F7F2F0"
         android:textSize="18sp" />
 
@@ -112,7 +112,8 @@
         android:hint="@string/say_something"
         android:inputType="textPersonName"
         android:fontFamily="@font/pistara"
-        android:textColorHint="#FCF1E6E6" />
+        android:textColorHint="#FCF1E6E6"
+        android:textColor="#FCF1E6E6"/>
 
     <EditText
         android:id="@+id/etEnterName_m"
@@ -125,7 +126,8 @@
         android:hint="@string/textname"
         android:inputType="textPersonName"
         android:fontFamily="@font/pistara"
-        android:textColorHint="#FCF1E6E6" />
+        android:textColorHint="#FCF1E6E6"
+        android:textColor="#FCF1E6E6"/>
 
 
 </RelativeLayout>

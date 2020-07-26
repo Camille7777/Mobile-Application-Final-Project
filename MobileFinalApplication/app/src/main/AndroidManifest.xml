@@ -17,9 +17,15 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-        <activity android:name=".Covercyc">
 
+        <activity android:name=".Covercyc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
         <activity
         android:name=".setalarm">
 
@@ -27,11 +33,7 @@
         </activity>
         <activity android:name=".StopWatchAct" />
         <activity android:name=".NightMain">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MyPageMain">
 

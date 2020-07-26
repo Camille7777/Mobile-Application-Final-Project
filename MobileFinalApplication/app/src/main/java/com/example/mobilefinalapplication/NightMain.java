@@ -165,7 +165,6 @@ public class NightMain extends AppCompatActivity {
         });
 
 
-
     }
 
 

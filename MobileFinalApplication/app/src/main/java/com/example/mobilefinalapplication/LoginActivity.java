@@ -112,15 +112,12 @@ public class LoginActivity extends AppCompatActivity {
                         pDialog.dismiss();
                         try {
                             //Check if user got logged in successfully
-
                             if (response.getInt(KEY_STATUS) == 0) {
                                 session.loginUser(username,response.getString(KEY_FULL_NAME));
                                 loadDashboard();
-
                             }else{
                                 Toast.makeText(getApplicationContext(),
                                         response.getString(KEY_MESSAGE), Toast.LENGTH_SHORT).show();
-
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -135,7 +132,6 @@ public class LoginActivity extends AppCompatActivity {
                         //Display error message whenever an error occurs
                         Toast.makeText(getApplicationContext(),
                                 error.getMessage(), Toast.LENGTH_SHORT).show();
-
                     }
                 });
 

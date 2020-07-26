@@ -160,7 +160,7 @@ public class RegisterActivity extends AppCompatActivity {
      */
     private boolean validateInputs() {
         if (KEY_EMPTY.equals(fullName)) {
-            etFullName.setError("Full Name cannot be empty");
+            etFullName.setError("Email cannot be empty");
             etFullName.requestFocus();
             return false;
 
