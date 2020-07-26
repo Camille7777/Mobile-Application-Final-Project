@@ -33,6 +33,8 @@ public class MeditationSubcyc extends AppCompatActivity {
 
     Button cycClear;
 
+    Button backbutton;
+
    // ImageView clickImagecyc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,8 @@ public class MeditationSubcyc extends AppCompatActivity {
         firstLinecyc=findViewById(R.id.sessiontext1);
 
         centerimagecyc=findViewById(R.id.centreimagecyc);
+
+        backbutton=findViewById(R.id.cycClear);
         /*
         bar_icon1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +101,13 @@ public class MeditationSubcyc extends AppCompatActivity {
             }
         });
         */
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MeditationSubcyc.this,ActivityMeditationcyc.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @SuppressLint("Range")
@@ -119,10 +130,6 @@ public class MeditationSubcyc extends AppCompatActivity {
 
     }
 
-    public void ReturnMainMeditationcyc()
-    {
-        Intent intent=new Intent(this,MainActivity.class);
-        startActivity(intent);
-    }
+
 
 }
