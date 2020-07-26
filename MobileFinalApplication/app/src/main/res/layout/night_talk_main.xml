@@ -43,7 +43,7 @@
         android:layout_width="284dp"
         android:layout_height="106dp"
         android:layout_marginStart="80dp"
-
+        android:textAlignment="center"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/segoepr"
@@ -61,7 +61,7 @@
         android:layout_below="@id/text_rz"
         android:layout_marginStart="180dp"
         android:layout_marginTop="-3dp"
-        android:layout_marginEnd="50dp"
+
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/segoepr"
         android:text="--- Bejing, China"
@@ -71,11 +71,13 @@
 
     <ImageView
         android:id="@+id/icon_rz"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="290dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@+id/text2_rz"
         android:background="@drawable/icon_rz" />
 
     <com.airbnb.lottie.LottieAnimationView

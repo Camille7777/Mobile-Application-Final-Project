@@ -15,28 +15,30 @@
         android:id="@+id/cyc_my1id1"
         android:layout_width="wrap_content"
         android:layout_height="362dp"
-        app:srcCompat="@drawable/my_cyc1" />
+        app:srcCompat="@drawable/my_m" />
 
     <ImageView
         android:id="@+id/cyc_myid2"
-        android:layout_width="wrap_content"
-        android:layout_height="182dp"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
         android:layout_below="@id/cyc_my1id1"
-        app:srcCompat="@drawable/my_cyc2" />
+        android:layout_marginTop="-45dp"
+        app:srcCompat="@drawable/mysetting_m" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@id/cyc_myid2"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="-2dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="100dp">
+
             <ImageView
                 android:id="@+id/cyc_tips"
                 android:layout_width="wrap_content"
                 android:layout_height="210dp"
                 app:srcCompat="@drawable/tips" />
-
 
 
         </RelativeLayout>
@@ -51,4 +53,38 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/cyc_logout" />
+
+    <TextView
+        android:id="@+id/username_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="@font/pistara"
+        android:text="Jack Sparrow"
+        android:textColor="#A0BCC9"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/myemail_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_m"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="@font/pistara"
+        android:text=" Email:"
+        android:textColor="#A0BCC9"
+        android:textSize="24dp"  />
+
+        <TextView
+        android:id="@+id/emailvalue_m"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_m"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@id/myemail_m"
+        android:fontFamily="@font/pistara"
+        android:text=" Email:"
+        android:textColor="#A0BCC9"
+        android:textSize="24dp" />
 </RelativeLayout>
