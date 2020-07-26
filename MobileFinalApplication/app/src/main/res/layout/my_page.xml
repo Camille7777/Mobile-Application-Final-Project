@@ -27,7 +27,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="90dp"
         android:layout_below="@id/cyc_myid2"
         android:layout_marginTop="-2dp">
         <RelativeLayout
